@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOTBALL SHOP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <h1>FOOTBALL SHOP</h1>
+            <p>Jersey, accessories & fan gear</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-copy">
+                <h2>Get ready for the upcoming World Cup</h2>
+                <p>Shop the latest national team jerseys and fan gear before the tournament starts. Choose your kit, compare price ranges, and order instantly through WhatsApp.</p>
+                <a class="button button-primary" href="https://wa.me/19363666566?text=Hello%20Football%20Shop%2C%20I%20want%20to%20order%20a%20World%20Cup%20jersey" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+                <div class="hero-featured">
+                    <h3>Featured: Spain Home Jersey</h3>
+                    <div class="hero-featured-card">
+                        <img src="../Jersey/SPAIN HOME .jpeg" alt="Spain Jersey" />
+                        <div>
+                            <p>Price range: $58 - $68</p>
+                            <a class="button button-secondary" href="https://wa.me/19363666566?text=Hello%20Football%20Shop%2C%20I%20want%20to%20order%20the%20Spain%20Home%20Jersey" target="_blank" rel="noopener noreferrer">Order Spain</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../Jersey/BRAZIL%20KIT.jpeg" alt="World Cup Jersey">
+                <div class="hero-card">
+                    <span>World Cup ready</span>
+                    <p>Official-style jerseys for fans watching the tournament.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Popular Products</h2>
+            <div class="product-list" id="productList">
+                <!-- Product cards injected by JavaScript -->
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="slideshow-bg" id="slideshowBg"></div>
+            <div class="about-content">
+                <h2>About Our Shop</h2>
+                <p>We sell high-quality football jerseys, scarves, and fan accessories with fast WhatsApp ordering. Browse products and message us to place your order immediately.</p>
+            </div>
+        </section>
+
+        <section id="tickets" class="tickets">
+            <h2>World Cup Ticket Check</h2>
+            <p>Tick the box and press the button to check World Cup ticket availability with our support team.</p>
+            <div class="ticket-check">
+                <label>
+                    <input id="ticketCheckbox" type="checkbox">
+                    I want to check World Cup ticket availability
+                </label>
+                <button id="ticketButton" class="button button-primary" type="button" disabled>Check Tickets</button>
+            </div>
+            <p id="ticketMessage" class="ticket-message">Select the checkbox to enable ticket availability.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Send us a message on WhatsApp to ask about sizes, colors, or availability.</p>
+            <div class="contact-actions">
+                <a class="button button-secondary" href="https://wa.me/19363666566?text=Hello%20Football%20Shop%2C%20I%20have%20a%20question%20about%20your%20products" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+                <div class="contact-info">
+                    <p>WhatsApp: <strong>+19363666566</strong></p>
+                    <p>Email: <strong>willnessharbor@gmail.com</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 FOOTBALL SHOP.</p>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/19363666566?text=Hello%20Football%20Shop" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
