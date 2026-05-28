@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOTBALL SHOP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <h1>FOOTBALL SHOP</h1>
+            <p>Jersey, accessories & fan gear</p>
+        </div>
+        <button id="menuToggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+            <span></span>
+            Menu
+        </button>
+        <nav id="siteNav" class="site-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#news">News</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+
+
+        <section id="home" class="hero">
+            <div class="hero-map-bg" aria-hidden="true">
+                <svg viewBox="0 0 120 70" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="World map decoration">
+                    <path d="M8 34c10-12 24-13 34-10 8 2 14 8 18 16 4 7 6 12 14 10 8-2 9-10 16-10 5 0 8 5 12 8 4 3 8 3 14 0 2-1 4-3 5-6 2-5 0-10-3-14-4-6-10-9-16-10-8-2-16 0-24 4-9 4-16 12-24 16-9 4-18 5-26 2-5-1-10-4-14-8z" fill="rgba(0,0,0,0.18)"/>
+                    <path d="M88 18c7 3 10 8 10 14 0 6-4 10-8 12-3 1-6 0-8-2s-2-6 1-10 6-8 9-10z" fill="rgba(0,0,0,0.12)"/>
+                    <circle cx="20" cy="26" r="6" fill="rgba(0,0,0,0.16)"/>
+                    <circle cx="44" cy="44" r="5" fill="rgba(0,0,0,0.12)"/>
+                    <circle cx="74" cy="34" r="4" fill="rgba(0,0,0,0.08)"/>
+                </svg>
+            </div>
+            <div class="hero-copy">
+                <h2>Get ready for the upcoming World Cup</h2>
+                <p>Shop the latest national team jerseys and fan gear before the tournament starts. Choose your kit, compare price ranges, and order instantly through WhatsApp.</p>
+                <div class="hero-pill-group">
+                    <span class="hero-pill">World Cup Pre-order</span>
+                    <span class="hero-chip">Limited stock for fan favorites</span>
+                </div>
+                <a class="button button-primary" href="https://wa.me/19363666566?text=Hello%20Football%20Shop%2C%20I%20want%20to%20order%20a%20World%20Cup%20jersey" target="_blank" rel="noopener noreferrer">Order on WhatsApp</a>
+                <div class="countdown-panel" aria-label="World Cup countdown">
+                    <div class="countdown-header">
+                 <span class="countdown-label" aria-live="polite">Kickoff in</span>
+                        <small>Next World Cup match day</small>
+                    </div>
+                    <div class="countdown-item">
+                        <strong id="days">00</strong>
+                        <span>Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <strong id="hours">00</strong>
+                        <span>Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <strong id="minutes">00</strong>
+                        <span>Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <strong id="seconds">00</strong>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+                <div class="hero-featured">
+                    <h3>Featured Accessory</h3>
+                    <div class="hero-featured-card">
+                        <img src="Accessories/GERMAN%20HOODIE.jpeg" alt="German Hoodie"/>
+                        <div class="hero-featured-info">
+                            <span class="featured-tag">German Hoodie</span>
+                            <p>Warm match-day hoodie for World Cup fans.</p>
+                            <a class="button button-secondary" href="https://wa.me/19363666566?text=Hello%20Football%20Shop%2C%20I%20want%20to%20order%20the%20German%20Hoodie" target="_blank" rel="noopener noreferrer">Order Hoodie</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <div class="hero-image">
+                <img src="Jersey/BRAZIL%20KIT.jpeg" alt="World Cup Jersey">
+                <div class="hero-card">
+                    <span>World Cup ready</span>
+                    <p>Official-style jerseys for fans watching the tournament.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Popular Products</h2>
+            <div class="product-toolbar" id="productToolbar">
+                <div class="filter-group">
+                    <button class="filter-button active" data-filter="all" type="button">All</button>
+                    <button class="filter-button" data-filter="featured" type="button">Featured</button>
+                </div>
+                <div class="product-count" id="productCount">7 products available</div>
+            </div>
+            <div class="product-list" id="productList">
+                <!-- Product cards injected by JavaScript -->
+            </div>
+        </section>
+
+        <section id="why" class="features">
+            <h2>Why buy from us</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Fast WhatsApp orders</h3>
+                    <p>Order your favorite jersey instantly and get a confirmation right away.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>World Cup-ready stock</h3>
+                    <p>Curated team kits and fan gear perfect for match day and tournament celebrations.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Trusted worldwide shipping</h3>
+                    <p>Secure delivery and reliable support for fans across the globe.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="slideshow-bg" id="slideshowBg"></div>
+            <div class="about-content">
+                <h2>About Our Shop</h2>
+                <p>We sell high-quality football jerseys, scarves, and fan accessories with fast WhatsApp ordering. Browse products and message us to place your order immediately.</p>
+                <div class="hospitality-message">
+                    <p><strong>Welcome to our World Cup Friends!</strong></p>
+                    <p>We're thrilled to have you here! Whether you're a passionate fan, a casual supporter, or looking for the perfect gift, we're committed to providing you with authentic jerseys and premium fan gear. Our dedicated team is always ready to assist you and ensure your experience is exceptional. Thank you for choosing us as your go-to destination for World Cup merchandise!</p>
+                </div>
+                <div class="world-cup-icon world-cup-bounce">WC</div>
+            </div>
+        </section>
+
+        <section id="tickets" class="tickets">
+            <div class="ticket-banner">
+                <span class="ticket-animal" aria-hidden="true">🐆</span>
+                <div>
+                    <strong>Ticket Corner</strong>
+                    <p>Colorful seats, fast help, and a World Cup-ready vibe for your match day.</p>
+                </div>
+            </div>
+            <h2>World Cup Ticket Check</h2>
+            <p>Select your preferences and check World Cup ticket availability with our support team.</p>
+            <div class="ticket-check">
+                <label>
+                    <input id="ticketCheckbox" type="checkbox">
+                    I want to check World Cup ticket availability
+                </label>
+            </div>
+            <div id="advancedTicketForm" class="advanced-ticket-form">
+                <div class="ticket-form-group">
+                    <label for="ticketMatch">Select Match:</label>
+                    <select id="ticketMatch">
+                        <option value="">Choose a match...</option>
+                        <option value="Final">Final</option>
+                        <option value="Semi-Final">Semi-Final</option>
+                        <option value="Quarter-Final">Quarter-Final</option>
+                        <option value="Group Stage">Group Stage</option>
+                        <option value="third position">Third Position</option>
+                    </select>
+                </div>
+                <div class="ticket-form-group">
+                    <label for="ticketQuantity">Number of Tickets:</label>
+                    <select id="ticketQuantity">
+                        <option value="1">1 Ticket</option>
+                        <option value="2">2 Tickets</option>
+                        <option value="3">3 Tickets</option>
+                        <option value="4">4 Tickets</option>
+                        <option value="5">5+ Tickets</option>
+                    </select>
+                </div>
+                <div class="ticket-form-group">
+                    <label for="ticketTier">Seating Tier:</label>
+                    <select id="ticketTier">
+                        <option value="">Select tier...</option>
+                        <option value="Premium">Premium (VIP)</option>
+                        <option value="Standard">Standard</option>
+                        <option value="Economy">Economy</option>
+                        <option value="Back Stadium">Back Stadium</option>
+                    </select>
+                </div>
+                <button id="ticketButton" class="button button-primary" type="button" disabled>Check Availability</button>
+                <div id="ticketPreview" class="ticket-preview" hidden>
+                    <p><strong>Match preview:</strong> No selection yet</p>
+                </div>
+            </div>
+            <p id="ticketMessage" class="ticket-message">Select the checkbox to enable ticket availability.</p>
+        </section>
+
+        <section id="news" class="news-updates">
+            <div class="news-header">
+                <div>
+                    <h2>LIVE SPORTS TICKER</h2>
+                    <p>Broadcast-style alerts for goals, star players, cards, and match milestones.</p>
+                </div>
+                <span class="news-badge">BREAKING</span>
+            </div>
+            <div class="news-topline">
+                <span class="on-air" aria-live="polite">ON AIR</span>
+                <span class="broadcast-channel">SPORTS 24/7</span>
+            </div>
+            <div class="scoreboard" aria-label="Live match scoreboard">
+                <div class="score-team">
+                    <div class="team-logo home-logo" aria-hidden="true">BRA</div>
+                    <span class="team-label">Brazil</span>
+                    <strong id="scoreHome">1</strong>
+                </div>
+                <div class="score-center">
+                    <span id="scoreStatus">Match Live</span>
+                    <strong id="scoreTime">23:00</strong>
+                </div>
+                <div class="score-team away">
+                    <div class="team-logo away-logo" aria-hidden="true">ARG</div>
+                    <span class="team-label">Argentina</span>
+                    <strong id="scoreAway">0</strong>
+                </div>
+            </div>
+            <div class="news-panel">
+                <div class="news-ticker">
+                    <div class="news-marquee animate">
+                        <span id="newsTicker">Broadcast alerts will flash here as each big moment unfolds.</span>
+                    </div>
+                </div>
+                <button id="newsRefreshBtn" class="button button-secondary" type="button">Next Alert</button>
+            </div>
+            <div class="news-bullet-list">
+                <span class="bullet-label">Live highlights:</span>
+                <ul id="newsBulletList"></ul>
+            </div>
+            <div id="newsNotification" class="news-notification" aria-live="polite"></div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Send us a message on WhatsApp to ask about sizes, colors, or availability.</p>
+            <div class="contact-actions">
+                <a class="button button-secondary" href="https://wa.me/19363666566?text=Hello%20Football%20Shop%2C%20I%20have%20a%20question%20about%20your%20products" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+                <div class="contact-info">
+                    <p>WhatsApp: <strong>+19363666566</strong></p>
+                    <p>Email: <strong>willnessharbor@gmail.com</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 FOOTBALL SHOP</p>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/19363666566?text=Hello%20Football%20Shop" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
